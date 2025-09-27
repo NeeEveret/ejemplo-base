@@ -1,0 +1,40 @@
+instalar node
+npx create-react-app . -->para crear el proyecto en la carpeta deseada
+
+
+enf -->de snipets crea una funcion flecha
+
+para desplegar github pages, netlify, firebase
+npm start --> para iniciar local
+
+
+con github pages
+
+npm install gh-pages --save-dev
+
+  "homepage": "https://NeeEveret.github.io/deploy1", añadir esto en packaje.json
+
+
+"predeploy": "npm run build",		esto en scripts de json
+"deploy": "gh-pages -d build"
+
+
+
+subimos los archivos al github, manual o con
+
+git inite
+git remote add origin https://github.com/TU_USUARIO/TU_REPO.git
+git branch -M main
+git add .
+git commit -m "primer commit"
+git push -u origin main
+
+
+luego 
+npm run deploy		 si no funciona reinstala las dependencias con rm -rf node_modules package-lock.json
+
+luego npm install y intentar npm run deploy
+
+
+Instalar react-scripts manualmente por si no lo encuentra
+npm install react-scripts --save
